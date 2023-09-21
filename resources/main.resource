@@ -15,8 +15,11 @@ ${edge}              edge
 ${title}             Walkdog by Papito
 ${button}            css=a[href="/signup"]
 ${home}              css=a[href="/"]
+${image}             css=img[alt="Walkdog"]
 ${signup}            ${url}/signup
 ${title}             Faça seu cadastro
+${h1}                Cuidado e diversão em cada passo
+${text}              css=main p
 ${phrase}            Use nosso aplicativo para ganhar dinheiro fazendo o que ama: cuidar de pets
 ${obrigado}          Recebemos o seu cadastro e em breve retornaremos o contato.  
 
@@ -39,7 +42,7 @@ Iniciar Sessão
   Open browser            ${url}    ${chrome}
   # Open browser            ${url}    ${firefox}
   # Open browser            ${url}    ${edge}
-  Set Window Size         1366    768
+  Set Window Size         1366      768
 
 Encerrar Sessão
   Close Browser

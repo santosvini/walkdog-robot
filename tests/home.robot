@@ -8,8 +8,8 @@ Test Teardown    Encerrar Sessão
 
 *** Test Cases ***
 TC 01 - WebApp deve estar online
+  [Tags]    webapp
   Title Should Be                    ${title}
-  Page Should Contain                Cuidado e diversão em cada passo
-  Get Text                           css=main p
-  Wait Until Element Is Visible      css=img[alt="Walkdog"]
-  Sleep    3s
+  Page Should Contain                ${h1}
+  Get Text                           ${text}
+  Wait Until Element Is Visible      ${image}
