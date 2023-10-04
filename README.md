@@ -54,7 +54,9 @@ Criar req.txt com as
 
 Escolhe a opção desejada, espere a execução, após a mesma, retornará para o menu principal.
 
-![Screenshot](img\shell.png)
+![Screenshot](img/shell.png)
+
+https://github.com/santosvini/walkdog-robot/assets/46813491/bb67b4e7-4810-41f6-90f1-a896aa62d681
 
 Clone o projeto:
 
@@ -83,7 +85,7 @@ allure serve
 
 Aqui o report que o robot monta ao finalizar as execuções
 
-![Report](img\report.png)
+![Report](img/report.png)
 
 ## Feedback
 
