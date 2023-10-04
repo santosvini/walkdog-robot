@@ -9,6 +9,7 @@ Library    FakerLibrary     locale=pt_BR
 *** Variables ***
 ${url}               https://walkdog.vercel.app/
 ${chrome}            chrome
+${chromeheadless}    headlesschrome
 ${firefox}           firefox
 ${edge}              edge
 
@@ -35,13 +36,11 @@ ${input_number}      input[name="addressNumber"]
 ${input_details}     input[name="addressDetails"]
 ${input_file}        input[type="file"]
 ${cadastrar}         xpath=//button[contains(.,'Cadastrar')]
-${documento}         ${EXECDIR}/images.jpeg
+${documento}         ${EXECDIR}/img/images.jpeg
 
 *** Keywords ***
 Iniciar Sessão
   Open browser            ${url}    ${chrome}
-  # Open browser            ${url}    ${firefox}
-  # Open browser            ${url}    ${edge}
   Set Window Size         1366      768
 
 Encerrar Sessão
