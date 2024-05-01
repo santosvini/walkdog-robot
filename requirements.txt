@@ -1,0 +1,9 @@
+Faker==24.4.0
+requests==2.31.0
+robotframework==7.0
+robotframework-faker==5.0.0
+robotframework-jsonlibrary==0.5
+robotframework-pythonlibcore==4.4.0
+robotframework-requests==0.9.6
+robotframework-selenium2library==3.0.0
+robotframework-seleniumlibrary==6.2.0
