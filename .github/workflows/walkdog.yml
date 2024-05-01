@@ -1,6 +1,6 @@
 name: Python Script Workflow
 
-on: workflow_dispatch
+on: push
 
 jobs:
   build-ubuntu:
@@ -21,8 +21,9 @@ jobs:
 
       - run: echo "🤖 Run a Script 🤖"
       - name: Run Robot Framework tests
-        run: chmod +x ./run.sh
-        shell: bash    
+        run: robot --outputdir end-to-end/ /tests
+        # run: chmod +x ./run.sh
+        # shell: bash
 
   build-windows:
     runs-on: windows-latest
@@ -42,7 +43,8 @@ jobs:
 
       - run: echo "🤖 Run a Script 🤖"
       - name: Run Robot Framework tests
-        run: ./run.sh
+        run: robot --outputdir end-to-end/ /tests
+       # run: ./run.sh
 
   build-macos:
     runs-on: macos-latest
@@ -62,5 +64,6 @@ jobs:
 
       - run: echo "🤖 Run a Script 🤖"
       - name: Run Robot Framework tests
-        run: chmod +x ./run.sh
-        shell: bash
+        run: robot --outputdir end-to-end/ /tests
+        # run: chmod +x ./run.sh
+        # shell: bash
