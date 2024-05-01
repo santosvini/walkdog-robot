@@ -40,7 +40,7 @@ ${documento}         ${EXECDIR}/img/images.jpeg
 
 *** Keywords ***
 Iniciar Sessão
-  Open browser            ${url}    ${chrome}
+  Open browser            ${url}    ${chromeheadless}
   Set Window Size         1366      768
 
 Encerrar Sessão

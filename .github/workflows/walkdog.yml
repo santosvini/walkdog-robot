@@ -21,7 +21,8 @@ jobs:
 
       - run: echo "🤖 Run a Script 🤖"
       - name: Run Robot Framework tests
-        run: ./run.sh       
+        run: chmod +x ./run.sh
+        shell: bash    
 
   build-windows:
     runs-on: windows-latest
@@ -61,4 +62,5 @@ jobs:
 
       - run: echo "🤖 Run a Script 🤖"
       - name: Run Robot Framework tests
-        run: ./run.sh
+        run: chmod +x ./run.sh
+        shell: bash
