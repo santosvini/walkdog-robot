@@ -12,13 +12,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.12'
         
       - name: Install dependencies
         run: |
          python -m pip install --upgrade pip
-         pip install robotframework-faker
          pip install -r requirements.txt
+        #  pip install robotframework-faker
 
       - run: echo "🤖 Run a Script 🤖"
       - name: Run Robot Framework tests
@@ -35,13 +35,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.12'
         
       - name: Install dependencies
         run: |
          python -m pip install --upgrade pip
-         pip install robotframework-faker
          pip install -r requirements.txt
+        #  pip install robotframework-faker
 
       - run: echo "🤖 Run a Script 🤖"
       - name: Run Robot Framework tests
@@ -57,13 +57,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.12'
         
       - name: Install dependencies
         run: |
          python -m pip install --upgrade pip
-         pip install robotframework-faker
          pip install -r requirements.txt
+        #  pip install robotframework-faker
 
       - run: echo "🤖 Run a Script 🤖"
       - name: Run Robot Framework tests

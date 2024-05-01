@@ -4,7 +4,7 @@ Documentation    Arquivo principal do projeto
 Library    SeleniumLibrary
 Library    BuiltIn
 Library    Screenshot
-Library    FakerLibrary     locale=pt_BR
+Library    FakerLibrary
 
 *** Variables ***
 ${url}               https://walkdog.vercel.app/
